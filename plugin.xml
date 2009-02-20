@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.imp.runtime.languageDescription">
+      <language
+            extensions="excpt"
+            description="The Exception-throwing language"
+            language="except">
+      </language>
+   </extension>
+   <extension
+         id="org.eclipse.imp.test.except.parserWrapper"
+         name="except Parser Wrapper"
+         point="org.eclipse.imp.runtime.parser">
+      <parserWrapper
+            class="org.eclipse.imp.test.except.parser.ExceptParseController"
+            language="except">
+      </parserWrapper>
+   </extension>
+   <extension
+         point="org.eclipse.imp.runtime.tokenColorer">
+      <tokenColorer
+            class="org.eclipse.imp.test.except.tokenColorer.ExceptTokenColorer"
+            language="except">
+      </tokenColorer>
+   </extension>
+   <extension
+         point="org.eclipse.imp.runtime.foldingUpdater">
+      <foldingUpdater
+            class="org.eclipse.imp.test.except.foldingUpdater.ExceptFoldingUpdater"
+            language="except">
+      </foldingUpdater>
+   </extension>
+   <extension
+         point="org.eclipse.imp.runtime.contentProposer">
+      <proposer
+            class="org.eclipse.imp.test.except.contentProposer.ExceptContentProposer"
+            language="except">
+      </proposer>
+   </extension>
+   <extension
+         point="org.eclipse.imp.runtime.documentationProvider">
+      <docProvider
+            class="org.eclipse.imp.test.except.documentationProvider.ExceptDocumentationProvider"
+            language="except">
+      </docProvider>
+   </extension>
+   <extension
+         point="org.eclipse.imp.runtime.markOccurrences">
+      <occurrenceMarker
+            class="org.eclipse.imp.test.except.occurrenceMarker.ExceptOccurrenceMarker"
+            language="except">
+      </occurrenceMarker>
+   </extension>
+   <extension
+         point="org.eclipse.imp.runtime.referenceResolvers">
+      <referenceResolver
+            class="org.eclipse.imp.test.except.referenceResolvers.ExceptReferenceResolver"
+            language="except">
+      </referenceResolver>
+   </extension>
+   <extension
+         point="org.eclipse.imp.runtime.modelTreeBuilder">
+      <treeBuilder
+            class="org.eclipse.imp.test.except.treeModelBuilder.ExceptTreeModelBuilder"
+            language="except">
+      </treeBuilder>
+   </extension>
+   <extension
+         point="org.eclipse.imp.runtime.labelProvider">
+      <labelProvider
+            class="org.eclipse.imp.test.except.treeModelBuilder.ExceptLabelProvider"
+            language="except">
+      </labelProvider>
+   </extension>
+
+</plugin>
