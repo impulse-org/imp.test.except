@@ -16,7 +16,7 @@ public class ExceptTokenColorer extends TokenColorerBase implements ExceptParser
         throw new IllegalArgumentException("Gotcha!");
     }
 
-    public IRegion calculateDamageExtent(IRegion seed) {
+    public IRegion calculateDamageExtent(IRegion seed, IParseController ctlr) {
         throw new IllegalArgumentException("Gotcha!");
     }
 }
