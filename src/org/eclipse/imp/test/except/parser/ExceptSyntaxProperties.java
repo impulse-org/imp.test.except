@@ -1,8 +1,8 @@
 package org.eclipse.imp.test.except.parser;
 
-import org.eclipse.imp.services.ILanguageSyntaxProperties;
+import org.eclipse.imp.services.base.LanguageSyntaxPropertiesBase;
 
-public class ExceptSyntaxProperties implements ILanguageSyntaxProperties {
+public class ExceptSyntaxProperties extends LanguageSyntaxPropertiesBase {
     public String getBlockCommentContinuation() {
         return null;
     }
@@ -12,18 +12,6 @@ public class ExceptSyntaxProperties implements ILanguageSyntaxProperties {
     }
 
     public String getBlockCommentStart() {
-        return null;
-    }
-
-    public String[][] getFences() {
-        return null;
-    }
-
-    public int[] getIdentifierComponents(String ident) {
-        return null;
-    }
-
-    public String getIdentifierConstituentChars() {
         return null;
     }
 
